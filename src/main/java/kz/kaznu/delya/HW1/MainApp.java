@@ -39,7 +39,6 @@ public class MainApp {
         if (data > 20) {
             System.out.println("Зеленый");
         }
-
     }
 
     public static void compareNumbers(int a, int b) {
@@ -51,7 +50,7 @@ public class MainApp {
     }
 
     public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
-        if (increment == true) {
+        if (increment) {
             System.out.println("result=" + initValue + "+" + delta);
         } else {
             System.out.println("result=" + initValue + "-" + delta);
