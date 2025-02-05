@@ -65,10 +65,13 @@ public class MainApp {
             sum2 += arr[i];
         }
         if (sum1 > sum2) {
+            System.out.println("Первая часть массива больше:");
             System.out.println(sum1);
         } else {
+            System.out.println("Вторая часть массива больше:");
             System.out.println(sum2);
         }
         System.out.println(Arrays.toString(arr));
+
     }
 }
