@@ -5,13 +5,23 @@ import java.util.Arrays;
 public class MainApp {
     public static void main(String[] args) {
         sameSentences(3, "hello everyone");
-        sumArr();
-        sameNum1();
-        sameNum2();
-        plusNum();
-        sum1AndSum2();
-
+        //////////////////
+        int[] arr1 = {1, 5, 3, 3, 6, 9};
+        sumArr(arr1);
+        ///////////////
+        int[] array = new int[5];
+        sameNum(2, array);
+        System.out.println(Arrays.toString(array));
+        ///////////////
+        int[] array2 = {1, 7, 3, 6, 3, 4};
+        plusNum(3, array2);
+        System.out.println(Arrays.toString(array2));
+        ////////////
+        int[] arr2 = {2, 5, 3, 2, 6, 4, 2, 7};
+        sum1AndSum2(arr2);
     }
+
+    //задание №1
     public static int sameSentences(int arr, String text) {
         for (int i = 0; i < arr; i++) {
             System.out.println(text);
@@ -19,52 +29,33 @@ public class MainApp {
         return arr;
     }
 
-
-
-    
-    public static void sumArr() {
-        //задание №2
-        int[] arr = {3, 6, 7, 9, 2, 4};
+    //задание №2
+    public static int sumArr(int[] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 5) {
                 sum += arr[i];
             }
         }
-        System.out.println(sum);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Сумма больше 5: " + sum);
+        return sum;
     }
 
-    public static void sameNum1() {
-        //задание №3 а)
-        int[] arr = new int[7];
+    //задание №3
+    public static void sameNum(int arr, int[] value) {
+        Arrays.fill(value, arr);
+
+    }
+
+    //задание №4
+    public static void plusNum(int value, int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = 3;
+            arr[i] += value;
         }
-        System.out.println(Arrays.toString(arr));
     }
 
-    public static void sameNum2() {
-        //задание №3 б)
-        int[] arr = {7, 3, 8, 4, 3};
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = 4;
-        }
-        System.out.println(Arrays.toString(arr));
-    }
-
-    public static void plusNum() {
-        //задание №4
-        int[] arr = {3, 6, 2, 2, 3};
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] += 3;
-        }
-        System.out.println(Arrays.toString(arr));
-    }
-
-    public static void sum1AndSum2() {
-        //задание №5
-        int[] arr = {3, 2, -1, 3, 2, 4};
+    //задание №5
+    public static void sum1AndSum2(int[] arr) {
         int sum1 = 0;
         int sum2 = 0;
         for (int i = 0; i < arr.length / 2; i++) {
