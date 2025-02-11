@@ -17,7 +17,7 @@ public class MainApp {
         plusNum(3, array2);
         System.out.println(Arrays.toString(array2));
         ////////////
-        int[] arr2 = {2, 5, 3, 2, 6, 4, 2, 7};
+        int[] arr2 = {2, 5, 3, 2, 6, 4, 2};
         sum1AndSum2(arr2);
     }
 
@@ -63,6 +63,11 @@ public class MainApp {
         }
         for (int i = arr.length / 2; i < arr.length; i++) {
             sum2 += arr[i];
+        }
+        if (arr.length%2!=0){
+            System.out.println(sum1);
+        }else{
+            System.out.println(sum2);
         }
         if (sum1 > sum2) {
             System.out.println("Первая часть массива больше:");
