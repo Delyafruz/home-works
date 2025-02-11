@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MainApp {
     public static void main(String[] args) {
-        sameSentences();
+        sameSentences(3, "hello everyone");
         sumArr();
         sameNum1();
         sameNum2();
@@ -12,13 +12,16 @@ public class MainApp {
         sum1AndSum2();
 
     }
-    public static void sameSentences() {
-        int[] arr= new int[6];
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Hi everyone!");
+    public static int sameSentences(int arr, String text) {
+        for (int i = 0; i < arr; i++) {
+            System.out.println(text);
         }
-        System.out.println(Arrays.toString(arr)); //просто чтоб проверить наш массив
+        return arr;
     }
+
+
+
+    
     public static void sumArr() {
         //задание №2
         int[] arr = {3, 6, 7, 9, 2, 4};
