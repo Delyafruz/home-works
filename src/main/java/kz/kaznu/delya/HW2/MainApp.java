@@ -4,7 +4,13 @@ import java.util.Arrays;
 
 public class MainApp {
     public static void main(String[] args) {
-        
+        sameSentences();
+        sumArr();
+        sameNum1();
+        sameNum2();
+        plusNum();
+        sum1AndSum2();
+
     }
     public static void sameSentences() {
         int[] arr= new int[6];
