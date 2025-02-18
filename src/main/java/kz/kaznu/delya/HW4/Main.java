@@ -27,7 +27,8 @@ public class Main {
             }
         }
     }
-    public static void ex2(){
+
+    public static void ex2() {
         Box box = new Box(30, 21, 10, "зеленый");
         box.infoBox();
         box.openBox();

@@ -26,19 +26,22 @@ public class Box {
             System.out.println("Коробка уже открыта");
         }
     }
-    public void closeBox(){
-        if(isOpen){
-            isOpen=false;
+
+    public void closeBox() {
+        if (isOpen) {
+            isOpen = false;
             System.out.println("Коробка закрыта");
-        }else {
+        } else {
             System.out.println("Коробка уже закрыта");
         }
 
     }
-    public void repaint(String newColor){
-        color=newColor;
-        System.out.println("Коробка перекрашена в "+newColor);
+
+    public void repaint(String newColor) {
+        color = newColor;
+        System.out.println("Коробка перекрашена в " + newColor);
     }
+
     public void putItem(String newItem) {
         if (isOpen) {
             if (item == null) {
@@ -51,19 +54,21 @@ public class Box {
             System.out.println("Коробка закрыта. Сначала откройте её.");
         }
     }
-    public void removeItem(){
-        if (isOpen){
-            if (item!=null){
-                System.out.println("Из коробки извлекли предмет: "+item);
-                item=null;
-            }else {
+
+    public void removeItem() {
+        if (isOpen) {
+            if (item != null) {
+                System.out.println("Из коробки извлекли предмет: " + item);
+                item = null;
+            } else {
                 System.out.println("Коробка пустая");
             }
-        }else {
+        } else {
             System.out.println("Коробка закрыта. Для начала откройте ее");
         }
     }
-    public void infoBox(){
+
+    public void infoBox() {
         System.out.println("Размеры коробки: " + width + "x" + height + "x" + depth);
         System.out.println("Цвет: " + color);
         System.out.println("Состояние: " + (isOpen ? "открыта" : "закрыта"));
