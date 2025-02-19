@@ -1,4 +1,4 @@
 package kz.kaznu.delya.HW5;
 
-public class MainApp {
+public class ddd {
 }
