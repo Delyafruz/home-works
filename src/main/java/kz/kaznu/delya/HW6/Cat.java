@@ -13,7 +13,7 @@ public class Cat {
 
     public boolean eat(Plate plate) {
         if (plate.decreaseFood(appetite)) {
-            satiety=true;
+            satiety = true;
             System.out.println(name + " поел.");
             return true;
         } else {
@@ -22,7 +22,7 @@ public class Cat {
         }
     }
 
-    public void info(){
-        System.out.println(name+" - " + (satiety ? "Сыт" : "Голоден"));
+    public void info() {
+        System.out.println(name + " - " + (satiety ? "Сыт" : "Голоден"));
     }
 }
